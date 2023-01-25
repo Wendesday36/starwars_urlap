@@ -1,0 +1,67 @@
+body{
+    background-color: rgb(170, 150, 119);
+}
+main{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 4fr 1fr;
+    grid-template-areas: "h h"
+                         "a n"
+                         "f f";
+}
+footer{
+    grid-area: f;
+}
+article{
+    grid-area: a;
+    /*view heigt*/
+    height: 40vh;
+}
+nav{
+    grid-area: n;
+    
+}
+nav ul li,a{
+    text-decoration: none;
+    list-style: none;
+}
+nav ul li a:hover{
+    background-color: antiquewhite;
+}
+header{
+    grid-area: h;
+}
+header,nav,article,footer{
+    background-color: bisque;
+    padding: 1em;
+}
+header,footer{
+    text-align: center;
+}
+footer h2{
+    font-style: italic;
+}
+
+
+@media all and (max-width:1200px) {
+    main{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    header,nav,article,footer{
+        background-color: rgb(229, 180, 120);
+        padding: 1em;
+    }
+}
+@media all and (max-width:600px){
+    main{
+        grid-template-columns:1fr;
+        grid-template-areas: "h"
+                             "n"
+                             "a"
+                             "f";
+    }
+    header,nav,article,footer{
+        background-color: rgb(145, 116, 80);
+    }
+}
