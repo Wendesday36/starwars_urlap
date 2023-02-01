@@ -65,12 +65,19 @@ input,label{
 }
 input{
     padding: 5px;
+    float: right;
+}
+.slidecontainer{
+    margin-top: 5px;
+}
+.csuszka{
+    float: left;
 }
 footer h2{
     font-style: italic;
 }
 input[type=submit]:focus{
-    
+    background-color: brown;
 }
 
 @media all and (max-width:1200px) {
