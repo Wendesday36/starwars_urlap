@@ -20,7 +20,7 @@ footer{
 article{
     grid-area: a;
     /*view heigt*/
-    height: 40vh;
+    height: 60vh;
 }
 nav{
     grid-area: n;
@@ -59,7 +59,6 @@ label{
     width: 20%;
     float: left;
     margin-right: 20px;
-    
 }
 input,label{
     margin-top: 20px;
@@ -70,7 +69,9 @@ input{
 footer h2{
     font-style: italic;
 }
-
+input[type=submit]:focus{
+    
+}
 
 @media all and (max-width:1200px) {
     /*csak a valtozast*/
