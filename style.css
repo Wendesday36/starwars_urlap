@@ -1,7 +1,12 @@
 body{
     background-color: rgb(170, 150, 119);
 }
+*{
+    box-sizing: border-box;
+}
 main{
+    width: 70%;
+    margin: 0 auto;
     display: grid;
     gap: 10px;
     grid-template-columns: 4fr 1fr;
@@ -19,24 +24,48 @@ article{
 }
 nav{
     grid-area: n;
-    
 }
 nav ul li,a{
     text-decoration: none;
     list-style: none;
 }
 nav ul li a:hover{
-    background-color: antiquewhite;
+    background-color: rgb(236, 218, 193);
 }
 header{
     grid-area: h;
 }
 header,nav,article,footer{
-    background-color: bisque;
+    background-color: rgb(199, 178, 154);
     padding: 1em;
 }
 header,footer{
     text-align: center;
+}
+fieldset{
+    border: 1px white solid;
+    margin: 15px;
+    padding: 15px;
+}
+legend{
+    width: 20%;
+    text-align: right;
+    background-color: antiquewhite;
+    border-radius: 5px;
+    color: black;
+    padding: 2px 30px;
+}
+label{
+    width: 20%;
+    float: left;
+    margin-right: 20px;
+    
+}
+input,label{
+    margin-top: 20px;
+}
+input{
+    padding: 5px;
 }
 footer h2{
     font-style: italic;
