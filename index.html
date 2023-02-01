@@ -22,7 +22,7 @@
           <input type="text" id="username" name="username"><br>
           <label for="pwd">Password:</label><br>
           <input type="password" id="pwd" name="pwd">
-          <input type="submit" value="Belépés">
+          <input class="belepes" type="submit" value="Belépés">
         </form>
       </nav>
       <article>
@@ -41,11 +41,22 @@
             <input type="text" id="kNev" placeholder="Anna" name="keresztnev" />
             <br />
           </fieldset>
+          <input type="submit" value="Küldés" />
         </form>
-        <input type="submit" value="Küldés" />
         <div class="slidecontainer">
           <legend>Elégedettség:</legend>
-          <input class="csuszka" type="range" min="1" max="100" value="50" class="slider" id="myRange">
+          <input class="csuszka" type="range" min="1" max="100" value="50" class="slider" id="myRange"><br>
+          <h5>Érték <span id="demo"></span></h5>
+          <script>
+            var slider = document.getElementById("myRange");
+            var output = document.getElementById("demo");
+            output.innerHTML = slider.value;
+            
+            slider.oninput = function() {
+              output.innerHTML = this.value;
+            }
+            </script>
+            <input type="submit" value="Küldés" />
         </div>
       </article>
       <footer>

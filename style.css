@@ -65,12 +65,12 @@ input,label{
 }
 input{
     padding: 5px;
-    float: right;
-}
-.slidecontainer{
-    margin-top: 5px;
 }
 .csuszka{
+    float: left;
+}
+
+.nevek{
     float: left;
 }
 footer h2{
