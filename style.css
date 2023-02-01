@@ -73,6 +73,7 @@ footer h2{
 
 
 @media all and (max-width:1200px) {
+    /*csak a valtozast*/
     main{
         display: grid;
         grid-template-columns: 2fr 1fr;
@@ -80,6 +81,10 @@ footer h2{
     header,nav,article,footer{
         background-color: rgb(229, 180, 120);
         padding: 1em;
+    }
+    legend{
+        width: 50%;
+        text-align: center;
     }
 }
 @media all and (max-width:600px){
