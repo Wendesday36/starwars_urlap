@@ -83,7 +83,11 @@ footer h2{
 input[type=submit]:focus{
     background-color: brown;
 }
-
+input[type=submit]{
+    display: block;
+    width: auto;
+    margin: auto;
+}
 @media all and (max-width:1200px) {
     /*csak a valtozast*/
     main{
