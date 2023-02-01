@@ -34,6 +34,7 @@ nav ul li a:hover{
 }
 header{
     grid-area: h;
+    background-image: url(birds-and-flowers-cream-1.jpg);
 }
 header,nav,article,footer{
     background-color: rgb(199, 178, 154);
@@ -65,9 +66,12 @@ input,label{
 }
 input{
     padding: 5px;
+    box-shadow: 5px 5px;
+    margin-bottom: 5px;
 }
 .csuszka{
     float: left;
+    box-shadow: none;
 }
 
 .nevek{
